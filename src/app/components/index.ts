@@ -1,13 +1,13 @@
-import { Header } from "./headers/Header";
-import { Footer } from "./footers/Footer";
-import { Loader } from "./loaders/loader";
-import { HeaderNavBar } from "./navbars/HeaderNavBar";
-import { FooterNavBar } from "./navbars/FooterNavBar";
+import { AppHeader } from "./headers/AppHeader";
+import { AppFooter } from "./footers/AppFooter";
+import { AppLoader } from "./loaders/Apploader";
+import { AppHeaderNavBar } from "./navbars/AppHeaderNavBar";
+import { AppFooterNavBar } from "./navbars/AppFooterNavBar";
 
 export {
-    Header,
-    Footer,
-    Loader,
-    HeaderNavBar,
-    FooterNavBar
+    AppHeader,
+    AppFooter,
+    AppLoader,
+    AppHeaderNavBar,
+    AppFooterNavBar
 }

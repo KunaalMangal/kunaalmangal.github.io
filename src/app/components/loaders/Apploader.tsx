@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Loader = () => {
+export const AppLoader = () => {
   return (
       <div>
         <h1>Hello This is Loader.</h1>
