@@ -1,9 +1,12 @@
 import React from "react";
 
+import "../../App.css"
+import { AppFooterNavBar } from "..";
+
 export const AppFooter = () => {
     return(
-        <div>
-            <h1>This is Footer.</h1>
+        <div className="App-Footer">
+            <AppFooterNavBar />
         </div>
     )
 }

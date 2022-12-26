@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background-color: tan;
 }
 
 .App-logo {
@@ -15,18 +15,53 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-Header-Navigation {
+  align-self: flex-end;
+  align-items: center;
+  justify-items: center;
+  padding: 5px;
 }
+.App-Header-Navigation ul {
+  display: inline-flex;
+  align-items: flex-start;
+  list-style: none;
+}
+.App-Header-Navigation ul li {
+  padding: 10px;
+}
+
+.App-link {
+  color: tan;
+  text-decoration: none;
+}
+.App-link:hover {
+  color: navajowhite;
+  text-decoration: none;
+}
+
+.App-Content {
+  min-height: 60vh;
+  text-align: center;
+  justify-content: center;
+}
+
+.App-Footer {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 
 @keyframes App-logo-spin {
   from {
