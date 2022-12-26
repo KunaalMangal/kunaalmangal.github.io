@@ -1,9 +1,11 @@
 import React from "react";
 import { AppHeaderNavBar } from "..";
 
-export const AppHeader = (props: any) => {    
+import "../../App.css"
+
+export const AppHeader = () => {    
     return(
-        <div className={props.className}>
+        <div className="App-header">
         <AppHeaderNavBar/>
         </div>
     )
