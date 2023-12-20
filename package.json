@@ -1,8 +1,26 @@
 {
   "name": "kunaalmangal.github.io",
   "version": "1.0.0",
+  "description": "A wordpress theme that enables WebXR in WordPress.",
+  "main": "src/js/app/index.js",
   "homepage": "https://kunaalmangal.github.io/",
+  "repository": "https://github.com/KunaalMangal/kunaalmangal.github.io",
   "private": true,
+  "author": "KUNAAL MANGAL",
+  "contributors": [
+    {
+      "name": "Kunaal Mangal",
+      "url": "https://github.com/KunaalMangal"
+    }
+  ],
+  "license": "",
+  "keywords": [
+    "ReactJS",
+    "Open-source",
+    "blog",
+    "portfolio",
+    "Kunaal Mangal"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
