@@ -1,0 +1,1 @@
+import{j as n,O as a}from"./index-E0wXHHOC.js";const s=()=>n.jsx("div",{children:n.jsxs("main",{id:"main-content",children:[n.jsx("h1",{children:"I'm kunaal mangal"}),n.jsx(a,{})]})});export{s as default};

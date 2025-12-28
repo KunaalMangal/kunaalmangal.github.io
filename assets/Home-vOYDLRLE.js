@@ -1,0 +1,1 @@
+import{j as t,L as o}from"./index-E0wXHHOC.js";const e=()=>t.jsxs("div",{children:[t.jsx("p",{children:"Home"}),t.jsx("br",{}),t.jsx(o,{to:"/about",children:"Want to about me"})]});export{e as default};
