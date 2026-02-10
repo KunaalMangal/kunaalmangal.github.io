@@ -5,7 +5,6 @@ const MainLayout: React.FC = () => {
   return (
     <div>
       <main id="main-content">
-        <h1>I'm kunaal mangal</h1>
         <Outlet />
       </main>
     </div>

@@ -1,12 +1,11 @@
-import React from "react";
-import { Link } from "react-router";
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
-    <div>
-      <p>Home</p>
-      <br />
-      <Link to="/about">Want to about me</Link>
+    <div className="min-h-screen">
+      <Navigation />
+      <Hero />
     </div>
   );
 };
