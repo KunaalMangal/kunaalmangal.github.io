@@ -1,50 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Languages & Frameworks",
-      skills: ["JavaScript (ES6+)", "React.js", "React Native"],
-    },
-    {
-      title: "State Management",
-      skills: ["Context API", "Redux", "Zustand"],
-    },
-    {
-      title: "Libraries & Integrations",
-      skills: [
-        "Firebase",
-        "Google Maps",
-        "Social Sign-In",
-        "Deep Linking",
-        "REST APIs",
-        "WebSocket",
-      ],
-    },
-    {
-      title: "Tools & Platforms",
-      skills: [
-        "Git",
-        "GitHub",
-        "GitLab",
-        "Bitbucket",
-        "VSCode",
-        "Android Studio",
-        "Xcode",
-        "Postman",
-      ],
-    },
-    {
-      title: "Web Development",
-      skills: ["ReactJS","WordPress"],
-    },
-    {
-      title: "Other",
-      skills: ["Performance Optimization", "Responsive Design", "Agile/Scrum"],
-    },
-  ];
+interface SkillCategory {
+  title: string;
+  skills: string[];
+}
 
+interface SkillsProps {
+  skillCategories: SkillCategory[];
+}
+
+const Skills = ({ skillCategories }: SkillsProps) => {
   return (
     <section id="skills" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">

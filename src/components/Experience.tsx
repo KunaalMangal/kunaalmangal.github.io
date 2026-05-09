@@ -3,59 +3,20 @@ import { Briefcase } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const Experience = () => {
-  const experiences = [
-    {
-      title: "SOFTWARE DEVELOPER",
-      company: "Konstant Info Solutions, Pvt. Ltd.",
-      location: "Jaipur, Rajasthan",
-      period: "August 2023 – present",
-      current: true,
-      achievements: [
-        "Developed cross-platform web & mobile applications using React.js and React Native.",
-        "Integrated REST APIs and third-party services, improving application efficiency and user experience.",
-        "Collaborated with designers and backend teams to deliver scalable, maintainable solutions.",
-      ],
-    },
-    {
-      title: "REACT NATIVE DEVELOPER",
-      company: "Emizen Tech, Pvt. Ltd.",
-      location: "Jaipur, Rajasthan",
-      period: "February 2022 – June 2023",
-      current: false,
-      achievements: [
-        "Developed cross-platform iOS and Android mobile applications using React Native.",
-        "Integrating REST APIs and third-party services such as Firebase, Google Maps, and push notifications.",
-        "Optimized app performance by reducing load time and improving navigation flow, achieving 40% faster response.",
-        "Upgrading Application frameworks old to latest to streamline the latest mobile application standards.",
-      ],
-    },
-    {
-      title: "WEB DEVELOPER (FREELANCER)",
-      company: "WFH",
-      location: "Jaipur, Rajasthan",
-      period: "August 2020 – September 2021",
-      current: false,
-      achievements: [
-        "Delivered HTML templates, WordPress websites and customized plugins/themes for multiple clients.",
-        "Developed responsive UIs with JavaScript, React.js, and CSS.",
-        "Implemented UI optimization and performance improvements.",
-      ],
-    },
-    {
-      title: "WEB DEVELOPER",
-      company: "Amazing IT",
-      location: "Jaipur, Rajasthan",
-      period: "September 2019 – July 2020",
-      current: false,
-      achievements: [
-        "Built and customized HTML templates, PHP websites, WordPress websites and themes as per client requirements.",
-        "Developed frontend components and assisted in backend API integration.",
-        "Contributed to FSAT Web Application, a government portal for food safety monitoring.",
-      ],
-    },
-  ];
+interface Experience {
+  title: string;
+  company: string;
+  location: string;
+  period: string;
+  current: boolean;
+  achievements: string[];
+}
 
+interface ExperienceProps {
+  experiences: Experience[];
+}
+
+const Experience = ({ experiences }: ExperienceProps) => {
   return (
     <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -65,7 +26,7 @@ const Experience = () => {
           </h2>
 
           <div className="space-y-8">
-            {experiences.map((exp, index) => (
+            {experiences.map((expItem, index) => (
               <Card
                 key={index}
                 className="p-6 md:p-8 shadow-medium hover:shadow-large transition-shadow"
@@ -77,21 +38,21 @@ const Experience = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-foreground">
-                        {exp.title}
+                        {expItem.title}
                       </h3>
                       <p className="text-lg text-muted-foreground">
-                        {exp.company}
+                        {expItem.company}
                       </p>
                       <p className="text-sm text-muted-foreground">
-                        {exp.location}
+                        {expItem.location}
                       </p>
                     </div>
                   </div>
                   <div className="flex flex-col items-start md:items-end gap-2">
-                    <Badge variant={exp.current ? "default" : "secondary"}>
-                      {exp.period}
+                    <Badge variant={expItem.current ? "default" : "secondary"}>
+                      {expItem.period}
                     </Badge>
-                    {exp.current && (
+                    {expItem.current && (
                       <Badge
                         variant="outline"
                         className="bg-secondary text-secondary-foreground"
@@ -103,7 +64,7 @@ const Experience = () => {
                 </div>
 
                 <ul className="space-y-2 ml-8 md:ml-8">
-                  {exp.achievements.map((achievement, achIndex) => (
+                  {expItem.achievements.map((achievement, achIndex) => (
                     <li
                       key={achIndex}
                       className="text-muted-foreground list-disc"

@@ -43,3 +43,6 @@ Allow: /
 
 # Crawl delay
 Crawl-delay: 1
+
+# Sitemap reference
+Sitemap: https://kunaalmangal.github.io/sitemap.xml
