@@ -6,17 +6,18 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Footer from "@/components/Footer";
+import { data } from "@/data/data";
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Education />
+      <Hero data={data} />
+      <About data={data} />
+      <Skills skillCategories={data.skillCategories} />
+      <Experience experiences={data.experiences} />
+      <Projects projects={data.projects} />
+      <Education education={data.education} achievements={data.achievements} />
       <Footer />
     </div>
   );
