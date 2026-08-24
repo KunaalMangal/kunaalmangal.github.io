@@ -8,27 +8,6 @@ const Footer = () => {
           <div className="text-center space-y-6">
             <h3 className="text-2xl font-bold">Get In Touch</h3>
 
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <a
-                href="tel:+918955448707"
-                className="flex items-center gap-2 hover:text-secondary transition-colors"
-              >
-                <Phone className="w-4 h-4" />
-                +91 89554 48707
-              </a>
-              <a
-                href="mailto:ksmangal1998@gmail.com"
-                className="flex items-center gap-2 hover:text-secondary transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                ksmangal1998@gmail.com
-              </a>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                Jaipur, Rajasthan
-              </div>
-            </div>
-
             <div className="flex justify-center gap-4">
               <a
                 href="https://www.linkedin.com/in/kunaalmangal/"

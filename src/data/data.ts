@@ -5,8 +5,8 @@ export const data = {
   title: "Building scalable web and mobile applications using React.js, React Native, TypeScript, and modern frontend engineering practices.",
   summery:
     "Senior Frontend Engineer with 6 years of experience delivering production-grade applications for startups, product companies, and enterprise clients serving 100K+ users worldwide. Specialized in scalable frontend architecture, cross-platform mobile development, performance optimization, CI/CD workflows, testing systems, and modern engineering practices.",
-  mobile: "+91 89554 48707",
-  email: "ksmangal1998@gmail.com",
+  // mobile: "+91 89554 48707",
+  // email: "ksmangal1998@gmail.com",
   currentLocation: "Jaipur, Rajasthan",
   
   // Social Links

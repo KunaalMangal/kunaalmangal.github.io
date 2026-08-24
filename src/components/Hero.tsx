@@ -45,22 +45,26 @@ const Hero = ({ data }: HeroProps) => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <a
-              href={`tel:${data.mobile.replace(/\s/g, "")}`}
-              className="flex items-center gap-2 hover:text-secondary transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              {data.mobile}
-            </a>
-            <span className="opacity-50">|</span>
-            <a
-              href={`mailto:${data.email}`}
-              className="flex items-center gap-2 hover:text-secondary transition-colors"
-            >
-              <Mail className="w-4 h-4" />
-              {data.email}
-            </a>
-            <span className="opacity-50">|</span>
+            {data?.mobile && (
+              <a
+                href={`tel:${data.mobile.replace(/\s/g, "")}`}
+                className="flex items-center gap-2 hover:text-secondary transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                {data.mobile}
+              </a>
+            )}
+            {/* <span className="opacity-50">|</span> */}
+            {data?.email && (
+              <a
+                href={`mailto:${data.email}`}
+                className="flex items-center gap-2 hover:text-secondary transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                {data.email}
+              </a>
+            )}
+            {/* <span className="opacity-50">|</span> */}
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
               {data.currentLocation}
@@ -69,11 +73,7 @@ const Hero = ({ data }: HeroProps) => {
 
           <div className="flex flex-wrap justify-center gap-4 pt-4">
             <Button asChild variant="secondary" size="lg" className="gap-2">
-              <a
-                href={data.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
                 LinkedIn
               </a>
@@ -84,11 +84,7 @@ const Hero = ({ data }: HeroProps) => {
               size="lg"
               className="gap-2 bg-transparent border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-primary"
             >
-              <a
-                href={data.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={data.github} target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5" />
                 GitHub
               </a>

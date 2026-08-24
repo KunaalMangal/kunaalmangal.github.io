@@ -41,10 +41,10 @@ const Navigation = () => {
             to="/"
             className="text-xl font-bold text-primary hover:text-accent transition-colors"
           >
-            KM
+            KUNAAL MANGAL
           </Link>
 
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
 
 
             <Button
@@ -56,7 +56,7 @@ const Navigation = () => {
               <Download className="w-4 h-4" />
               Resume
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
