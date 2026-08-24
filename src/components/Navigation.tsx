@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
-import { Download } from "lucide-react";
+// import { Download } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 
 
 const Navigation = () => {
@@ -17,15 +17,15 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleDownloadResume = () => {
-    // Create a link to download resume
-    const link = document.createElement("a");
-    link.href = "/KUNAAL_MANGAL_RESUME.pdf";
-    link.download = "KUNAAL_MANGAL_RESUME.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const handleDownloadResume = () => {
+  //   // Create a link to download resume
+  //   const link = document.createElement("a");
+  //   link.href = "/KUNAAL_MANGAL_RESUME.pdf";
+  //   link.download = "KUNAAL_MANGAL_RESUME.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <nav
