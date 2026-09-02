@@ -8,8 +8,8 @@ interface HeroProps {
     name: string;
     designation: string;
     summery: string;
-    mobile: string;
-    email: string;
+    mobile?: string;
+    email?: string;
     currentLocation: string;
     linkedin: string;
     github: string;
